@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+</head>
+<style>
+	 body {
+            transition: background-color 0.3s ease-in-out;
+            scroll-behavior: smooth;
+        }
+
+        section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #resume-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        #resume-button:hover {
+            background-color: #fff;
+            color: rgb(206, 152, 11);
+        }
+	body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+	background-image: url('head.jpg');
+	background-size: cover;
+    background-color: #333;
+    color: rgb(246, 152, 11);
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.tagline {
+    font-style: italic;
+}
+
+#about {
+    text-align:center;
+    padding: 50px;
+}
+
+img {
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.bio {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#skills {
+    background-color: #fff;
+    padding: 50px;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skill-info {
+    flex-grow: 1;
+}
+
+.skill-bar {
+    flex-grow: 2;
+    background-color: #ddd;
+    height: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: rgb(246, 152, 11);
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+
+#projects {
+    padding: 50px;
+}
+
+.project {
+    margin-bottom: 40px;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#resume {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+#contact {
+    padding: 50px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+</style>
+<body>
+
+    <!-- Header Section -->
+    <header >
+        <div class="logo">UVM</div>
+        <p class="tagline">Web Developer | Creative Thinker</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <img src="about.jpeg" alt="Random">
+        <div class="bio">
+            <p>
+                Hello! I'm Venkatachala Melady U, a passionate individual with a deep love for problem-solving and a keen interest in designing innovative and 
+				user-centric websites. My enthusiasm for web development goes hand in hand with a relentless eagerness to learn and a remarkable ability
+				to quickly grasp new concepts. With a foundation built on both analytical thinking and creative design, I thrive on challenges,
+				constantly seeking opportunities to enhance my skills and contribute fresh ideas to the ever-evolving world of web development
+
+            </p>
+            <p>
+                I have experience in HTML, CSS, JavaScript, and a keen eye for design. Let's build something amazing together!
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <div class="skill-info">
+                <p>Problem Solving</p>
+                <p>80% Efficiency</p>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-info">
+                <p>Java</p>
+                <p>90% Efficiency</p>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 90%;"></div>
+            </div>
+        </div>
+		<div class="skill">
+            <div class="skill-info">
+                <p>HTML</p>
+                <p>70% Efficiency</p>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 70%;"></div>
+            </div>
+        </div>
+		<div class="skill">
+            <div class="skill-info">
+                <p>JavaScript</p>
+                <p>70% Efficiency</p>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 70%;"></div>
+            </div>
+        </div>
+		<div class="skill">
+            <div class="skill-info">
+                <p>CSS</p>
+                <p>70% Efficiency</p>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 70%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="p1.png" alt="Project 1" height="70px" width="70px">
+            <div class="project-info">
+                <h3>Landing Page</h3>
+                <p>designed a landing page for a leading watch company named 'Tony Watches'<br>
+					Tools used: HTML,CSS,Visual studio code
+				</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="p2.png" alt="Project 2" height="70px" width="70px">
+            <div class="project-info">
+                <h3>Calculator</h3>
+                <p>Designed a responsive fully functional simple calculator<br>
+					Tools used: HTML,CSS,JavaScript,Visual studio code
+				</p>
+            </div>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Download my resume </p>
+		<br>
+			<a id="resume-button" href="your-resume.pdf" target="_blank">Resume</a>
+		
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email:uvenkatachalamelady003@gmail.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 UVM. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+	<script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('section');
+
+    const options = {
+        root: null, // Use the viewport as the root
+        rootMargin: '0px',
+        threshold: 0.5 // Adjust the threshold as needed (0.5 means 50% of the element must be visible)
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+
+    </script>
+
+
+</body>
+</html>
